@@ -19,11 +19,19 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  /*position: fixed;*/
+  position: fixed;
   top: 0;
   width: 100%;
-  padding: 20px 20px;
-  border: 2px solid pink;
+  padding: 10px 20px;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links li {
+  list-style: none;
 }
 
 .nav-links a {
@@ -34,17 +42,18 @@ body {
   font-size: 1rem; /* Adjust font size if necessary */
 }
 
+.navbar a:hover {
+  color: #00b172;
+}
+
 .logo {
   height: 40px; /* Adjust based on your logo's size */
   padding-right: 0px;
   margin-right: 0px;
 }
 
-.navbar a:hover {
-  color: #00b172;
-}
-
 .header {
+  margin-top: 70px;
   padding: 0px 20px 20px; /* Top padding equal to navbar height + some extra space */
   display: flex;
   text-align: center;
@@ -115,7 +124,7 @@ article h2 {
 
 article p {
   margin-top: 10;
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 100;
 }
 
@@ -167,7 +176,7 @@ article p {
 
 .absolute {
   position: absolute;
-  top: 1220px;
+  top: 1200px;
   right: 420px;
 }
 
