@@ -6,48 +6,115 @@ Green: #00B172
 White: #FFF
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
 .navbar {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-}
-
-.navbar ul {
   display: flex;
-  flex-direction: row;
-  justify-content: right;
-  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar li {
-  list-style: none;
-  list-style-type: none;
-  padding: 0 20px;
-}
-
-.navbar img {
-  height: 30px;
-  padding-right: 0 10px;
-}
-
-.left {
-  text-align: left;
-}
-
-.navbar a {
+.nav-links a {
   color: black;
-  font-size: 1em;
   text-decoration: none;
+  margin-left: 0px; /* Reduced margin */
+  margin-right: 40px; /* Reduced margin */
+  font-size: 14px; /* Adjust font size if necessary */
 }
 
-nav li a:hover {
+.logo {
+  height: 40px; /* Adjust based on your logo's size */
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.navbar a:hover {
   color: #00b172;
 }
 
 .header {
+  padding: 100px 20px 20px; /* Top padding equal to navbar height + some extra space */
+  text-align: center;
   background-image: url("/images/landing.jpg");
   background-size: cover;
-  height: 500px;
+  background-position: center;
+  height: 500px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
-  color: #fff;
+  color: white; /* Or any color that contrasts well with your background */
+}
+
+h1,
+h2 {
+  margin: 0; /* Removes default margin */
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: -70px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0 200px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-links a {
+    font-size: 12px; /* Smaller font size for smaller screens */
+  }
+
+  .logo {
+    height: 30px; /* Smaller logo for smaller screens */
+  }
+
+  /* Further responsive adjustments as needed */
+}
+
+.main-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.main-section h1 {
+  font-size: 30px;
+}
+
+.green-bar {
+  border-bottom: #00b172 solid 4px;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 20px;
+}
+
+article {
+  width: 30%;
+  padding: 10px;
+}
+
+article h2 {
+  margin-top: 0;
 }
