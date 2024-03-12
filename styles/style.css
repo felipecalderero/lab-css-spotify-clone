@@ -6,7 +6,7 @@ Green: #00B172
 White: #FFF
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;700&display=swap");
 
 body {
   margin: 0;
@@ -19,11 +19,11 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   width: 100%;
   padding: 20px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid pink;
 }
 
 .nav-links a {
@@ -31,7 +31,7 @@ body {
   text-decoration: none;
   margin-left: 0px; /* Reduced margin */
   margin-right: 40px; /* Reduced margin */
-  font-size: 14px; /* Adjust font size if necessary */
+  font-size: 1rem; /* Adjust font size if necessary */
 }
 
 .logo {
@@ -45,17 +45,14 @@ body {
 }
 
 .header {
-  padding: 100px 20px 20px; /* Top padding equal to navbar height + some extra space */
+  padding: 0px 20px 20px; /* Top padding equal to navbar height + some extra space */
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("/images/landing.jpg");
   background-size: cover;
-  background-position: center;
   height: 500px; /* Adjust as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   color: white; /* Or any color that contrasts well with your background */
 }
 
@@ -64,16 +61,118 @@ h2 {
   margin: 0; /* Removes default margin */
 }
 
-h1 {
+.header h1 {
   font-size: 60px;
   margin-bottom: 20px;
-  margin-top: -70px;
 }
-
-h2 {
+.header h2 {
   font-size: 20px;
   font-weight: lighter;
   margin: 0 200px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section-h1 {
+  margin: 40px 0;
+  font-size: 1.5rem;
+}
+
+.green-bar {
+  border-bottom: #00b172 solid 4px;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+
+article img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+article h2 {
+  margin-top: 10;
+  color: #00b172;
+}
+
+article p {
+  margin-top: 10;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.green-section {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00b172;
+  color: white;
+  height: 500px;
+}
+
+.green-section img {
+  margin: 110px 60px;
+  width: 220px;
+}
+
+.green-section-text {
+  margin: 0px 0 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.green-section-text h1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.white-bar {
+  padding-bottom: 6px;
+  border-bottom: white solid 4px;
+}
+
+.green-section-text h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.green-section-text p {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 1220px;
+  right: 420px;
+}
+
+.absolute img {
+  height: 100px;
 }
 
 /* Responsive design for smaller screens */
@@ -87,34 +186,4 @@ h2 {
   }
 
   /* Further responsive adjustments as needed */
-}
-
-.main-section {
-  text-align: center;
-  padding: 20px;
-  margin-top: 80px;
-}
-
-.main-section h1 {
-  font-size: 30px;
-}
-
-.green-bar {
-  border-bottom: #00b172 solid 4px;
-}
-
-.articles-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
-  margin-top: 20px;
-}
-
-article {
-  width: 30%;
-  padding: 10px;
-}
-
-article h2 {
-  margin-top: 0;
 }
